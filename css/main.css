@@ -21,7 +21,7 @@ html {
 
 header {
     display: flex;
-    width: 95%;
+    width: 100%;
     /*    max-width: 100%;*/
     flex-flow: column;
     justify-content: space-between;
@@ -44,14 +44,22 @@ header > h1 {
     /*    max-width: 100%;*/
     margin: 0.5rem;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+span{
+    display: flex;
+    width: 95%;
+    /*    max-width: 100%;*/
+/*    margin: 0.5rem;*/
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 main {
     display: grid;
-    grid-auto-flow: column;
-    /*    grid-template: column;*/
-    /*    grid-template-columns: 50% 50%;*/
+/*    grid-auto-flow: column;*/
+        grid-template: column;
     width: 100%;
     margin: auto;
     background-color: #f2f2f2;
@@ -60,22 +68,23 @@ main {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-form > div.form-box {
-    margin: 0.75rem;
-    display: inline-grid;
-    align-content: space-evenly;
+/*form > div.form-box {*/
+/*    margin: 0.75rem;*/
+/*    display: inline-grid;*/
+/*    align-content: space-evenly;*/
     /*    grid-template: column;*/
     /*    float: left;*/
     /*    clear: none;*/
-}
+/*}*/
+
 
 form {
-    display: grid;
-    grid-template: column;
-    grid-template-columns: 50% 50%;
+/*    display: grid;*/
+/*    grid-template: column;*/
+/*    grid-template-columns: 50% 50%;*/
     width: 100%;
     align-content: space-evenly;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 5px;
     /*    padding: 20px;*/
 }
@@ -132,11 +141,11 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 95%;
     margin-bottom: 1rem;
     padding: 0.5rem;
     /*    background-color: cadetblue;*/
-    margin: 0 0 0 5px;
+    margin: 0 0 3rem 0rem;
     display: inline-block;
     border: 0.5px solid black;
     border-radius: 6px;
@@ -149,7 +158,8 @@ input:focus {
 }
 
 button {
-    /*    display: inline-block;*/
+/*        display: inline-block;*/
+    width: 95%;
     border-color: #28a745 font-weight: 400;
     text-align: center;
     white-space: nowrap;
@@ -188,9 +198,59 @@ input.price#max::after {
         display: grid;
         /*        background-color: aqua;*/
         grid-auto-flow: column;
+/*        grid-template-columns: 40% 60%;*/
         width: 95%;
         margin-top: 10vh;
     }
+    
+    header{
+        width: 95%;
+    }
+    
+    form{
+/*        width: 100%;*/
+    }
+    
+    div.form-box.place{
+        display: block;
+    }
+    
+    div.form-box.check-in{
+     clear: left;
+    display: inline-block;
+    width: 50%;
+}
+
+div.form-box.check-out{
+/*     clear: left;*/
+    display: inline-block;
+    width: 49%;
+}
+    
+    div.form-box.min-price{
+     clear: left;
+    display: inline-block;
+    width: 50%;
+}
+
+div.form-box.max-price{
+/*     clear: left;*/
+    display: inline-block;
+    width: 49%;
+}
+    
+    div.form-box.dogs{
+     clear: left;
+    display: inline-block;
+    width: 50%;
+}
+
+div.form-box.search{
+    display: inline-block;
+/*    align-content: center;*/
+    width: 49%;
+}
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -228,7 +288,7 @@ input.price#max::after {
     }
 
     form > div.form-box {
-        margin: 0.5rem;
+/*        margin: 0.5rem;*/
         display: grid;
         grid-template: column;
         align-content: space-evenly;
