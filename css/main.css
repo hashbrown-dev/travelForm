@@ -29,7 +29,7 @@ header {
     background-position: center;
     height: 500px;
     /*    max-width: 100%;*/
-    background-image: url("img/img1.jpg");
+    background-image: url("./img/img1.jpg");
     background-color: #cccccc;
     background-position: top center;
     margin: 0.75rem;
